@@ -1,0 +1,84 @@
+body{
+  font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #E7ECF3;
+  /* color: #E4E4E4; */
+}
+.container{
+  margin: 70px 30px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 30px;
+}
+.card{
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.card .header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+.card .header .img-box{
+  width:10% ;
+  margin-right: 10px;
+}
+.card .header .img-box img{
+  width: 100%;
+  border-radius: 50px;
+  border: 1px solid blueviolet;
+}
+.card .content .info{
+  font-size: 24px;
+  line-height: 1.5;
+}
+.card .content .artical{
+  font-size: 16px;
+  line-height: 1.5;
+}
+.card-Daniel,
+.card-Jonathan,
+.card-Patrick{
+  color:white;
+}
+
+.card-Daniel .content .artical,
+.card-Jonathan .content .artical,
+.card-Patrick .content .artical{
+  color: #ffffff7c;
+
+}
+.card-Kira .content .artical,
+.card-Jeanette .content .artical{
+  color: rgba(0, 0, 0, 0.56);
+}
+.card-Daniel{
+  background-color: #7440C6;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.card-Jonathan{
+  background-color: #48556A;
+  grid-column: 3/4;
+  grid-row: 1/2;
+
+}
+.card-Kira{
+  background-color: #FFFFFF;
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+.card-Jeanette{
+  background-color: #FFFFFF;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.card-Patrick{
+  background-color: #19212E;
+  grid-area: card-Patrick;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
